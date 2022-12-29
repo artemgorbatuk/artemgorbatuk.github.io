@@ -3,35 +3,24 @@
     src: url('../fonts/YanoneKaffeesatz-ExtraLight.ttf'); /* IE9 Compat Modes */
     src: url('../fonts/YanoneKaffeesatz-ExtraLight.ttf?#iefix') format('truetype'), /* IE6-IE8 */
     url('../fonts/YanoneKaffeesatz-ExtraLight.ttf') format('truetype'), /* Modern Browsers */
-    url('../fonts/YanoneKaffeesatz-ExtraLight.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/YanoneKaffeesatz-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
     url('../fonts/YanoneKaffeesatz-ExtraLight.ttf#svgFontName') format('truetype'); /* Legacy iOS */
-    }
-
-.overlay {
-    position: absolute;
-    /* bottom: 0; */
-    top: 25vh;
-    left: 0;        
-    width: 100%;
-    height: 20vh;
-    z-index: 100;
-    background: #ffffff;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0.9) 80%, rgba(255, 255, 255, 0.25) 95%, rgba(255, 255, 255, 0) 100%);
 }
-.text {
+
+html {
     font-family: "Yanone Kaffeesatz";
+}
+
+.text {
     font-size: 100px;
+    width: 100%;
     display: flex;
-    position: absolute;
-    /* bottom: 20vh; */
-    left: 50%;
-    transform: translateX(-50%);
+    justify-content: center;
     user-select: none;
 }
 .text .wrapper {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 20px;
 }
 .text .wrapper .letter {
     transition: ease-out 1s;
@@ -48,4 +37,19 @@
 .text .wrapper:hover .shadow {
     opacity: 0;
     transform: translateY(30%);
+}
+
+.overlay {
+    position: absolute;
+    top: 26vh;
+    width: 100%;
+    height: 3vh;
+    z-index: 100;
+    background: #ffffff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0.9) 80%, rgba(255, 255, 255, 0.25) 95%, rgba(255, 255, 255, 0) 100%);
+}
+section {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
